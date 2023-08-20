@@ -1,0 +1,162 @@
+[
+  {
+    "_id": 0,
+    "customerId": 0,
+    "createdAt": "2016-09-09T08:16:54 -02:00"
+  },
+  {
+    "_id": 1,
+    "customerId": 1,
+    "createdAt": "2020-05-19T08:17:30 -02:00"
+  },
+  {
+    "_id": 2,
+    "customerId": 2,
+    "createdAt": "2023-04-07T12:53:08 -02:00"
+  },
+  {
+    "_id": 3,
+    "customerId": 3,
+    "createdAt": "2017-09-03T08:23:00 -02:00"
+  },
+  {
+    "_id": 4,
+    "customerId": 4,
+    "createdAt": "2017-05-09T07:06:09 -02:00"
+  },
+  {
+    "_id": 5,
+    "customerId": 5,
+    "createdAt": "2017-10-14T06:13:40 -02:00"
+  },
+  {
+    "_id": 6,
+    "customerId": 6,
+    "createdAt": "2016-11-12T02:38:53 -01:00"
+  },
+  {
+    "_id": 7,
+    "customerId": 7,
+    "createdAt": "2020-10-04T02:57:24 -02:00"
+  },
+  {
+    "_id": 8,
+    "customerId": 8,
+    "createdAt": "2016-05-14T12:56:17 -02:00"
+  },
+  {
+    "_id": 9,
+    "customerId": 9,
+    "createdAt": "2018-05-10T08:58:52 -02:00"
+  },
+  {
+    "_id": 10,
+    "customerId": 10,
+    "createdAt": "2022-09-01T10:40:08 -02:00"
+  },
+  {
+    "_id": 11,
+    "customerId": 11,
+    "createdAt": "2018-12-25T02:56:09 -01:00"
+  },
+  {
+    "_id": 12,
+    "customerId": 12,
+    "createdAt": "2014-01-14T03:15:29 -01:00"
+  },
+  {
+    "_id": 13,
+    "customerId": 13,
+    "createdAt": "2019-03-12T09:59:07 -01:00"
+  },
+  {
+    "_id": 14,
+    "customerId": 14,
+    "createdAt": "2015-04-18T01:20:05 -02:00"
+  },
+  {
+    "_id": 15,
+    "customerId": 15,
+    "createdAt": "2016-12-29T03:57:05 -01:00"
+  },
+  {
+    "_id": 16,
+    "customerId": 16,
+    "createdAt": "2022-01-09T02:15:56 -01:00"
+  },
+  {
+    "_id": 17,
+    "customerId": 17,
+    "createdAt": "2014-01-11T04:16:24 -01:00"
+  },
+  {
+    "_id": 18,
+    "customerId": 18,
+    "createdAt": "2019-02-13T06:21:53 -01:00"
+  },
+  {
+    "_id": 19,
+    "customerId": 19,
+    "createdAt": "2018-10-11T09:41:50 -02:00"
+  },
+  {
+    "_id": 20,
+    "customerId": 20,
+    "createdAt": "2018-03-22T11:08:58 -01:00"
+  },
+  {
+    "_id": 21,
+    "customerId": 21,
+    "createdAt": "2018-11-07T11:39:45 -01:00"
+  },
+  {
+    "_id": 22,
+    "customerId": 22,
+    "createdAt": "2016-04-22T09:40:51 -02:00"
+  },
+  {
+    "_id": 23,
+    "customerId": 23,
+    "createdAt": "2018-07-19T11:51:05 -02:00"
+  },
+  {
+    "_id": 24,
+    "customerId": 24,
+    "createdAt": "2020-11-24T12:27:28 -01:00"
+  },
+  {
+    "_id": 25,
+    "customerId": 25,
+    "createdAt": "2021-04-26T08:18:16 -02:00"
+  },
+  {
+    "_id": 26,
+    "customerId": 26,
+    "createdAt": "2021-04-07T03:03:51 -02:00"
+  },
+  {
+    "_id": 27,
+    "customerId": 27,
+    "createdAt": "2017-08-16T12:38:06 -02:00"
+  },
+  {
+    "_id": 28,
+    "customerId": 28,
+    "createdAt": "2020-01-22T09:34:46 -01:00"
+  },
+  {
+    "_id": 29,
+    "customerId": 29,
+    "createdAt": "2014-01-19T02:51:57 -01:00"
+  },
+  {
+    "_id": 30,
+    "customerId": 30,
+    "createdAt": "2020-07-23T09:05:34 -02:00"
+  },
+  {
+    "_id": 31,
+    "customerId": 31,
+    "createdAt": "2014-06-24T08:46:05 -02:00"
+  }
+]

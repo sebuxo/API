@@ -1,0 +1,951 @@
+[
+  {
+    "_id": 0,
+    "name": "Carmela Alvarado",
+    "createdAt": "2018-03-24T05:53:15 -01:00",
+    "stock": 3841,
+    "details": [
+      {
+        "price": 10359.32,
+        "description": "Officia deserunt ad cillum aliqua.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 1,
+    "name": "Claudia Peters",
+    "createdAt": "2018-05-16T05:16:05 -02:00",
+    "stock": 3664,
+    "details": [
+      {
+        "price": 4024.88,
+        "description": "Amet fugiat elit veniam adipisicing dolor qui ut consectetur.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Jeannette Newton",
+    "createdAt": "2021-06-25T04:17:28 -02:00",
+    "stock": 3132,
+    "details": [
+      {
+        "price": 69110.43,
+        "description": "Duis occaecat cupidatat aute culpa aliqua sint Lorem officia ex.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "Waters Henderson",
+    "createdAt": "2020-06-26T09:20:18 -02:00",
+    "stock": 4366,
+    "details": [
+      {
+        "price": 21832.27,
+        "description": "Ex deserunt ipsum aliquip sint ad consequat dolore elit magna anim ut.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "name": "Terra Oneal",
+    "createdAt": "2018-02-10T11:40:19 -01:00",
+    "stock": 923,
+    "details": [
+      {
+        "price": 52158.12,
+        "description": "Id consequat consequat adipisicing eu enim culpa cillum ullamco nostrud ea.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "name": "Bradshaw Best",
+    "createdAt": "2023-02-26T09:07:12 -01:00",
+    "stock": 3103,
+    "details": [
+      {
+        "price": 32073.02,
+        "description": "Id ullamco tempor id ex et.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "name": "Minerva Conrad",
+    "createdAt": "2022-08-08T07:28:48 -02:00",
+    "stock": 546,
+    "details": [
+      {
+        "price": 88501.9,
+        "description": "Aute magna elit quis magna exercitation ex irure.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 7,
+    "name": "Rasmussen Thomas",
+    "createdAt": "2022-10-27T02:46:21 -02:00",
+    "stock": 3988,
+    "details": [
+      {
+        "price": 32445.21,
+        "description": "Quis Lorem aute tempor laboris ut velit ut.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "name": "Foley Caldwell",
+    "createdAt": "2018-11-13T06:02:58 -01:00",
+    "stock": 33,
+    "details": [
+      {
+        "price": 10288.89,
+        "description": "Aliquip consequat pariatur laboris culpa excepteur laborum.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "name": "Whitley Rios",
+    "createdAt": "2017-11-05T08:49:39 -01:00",
+    "stock": 4065,
+    "details": [
+      {
+        "price": 70162.09,
+        "description": "Aliqua aute do in anim eiusmod fugiat elit ea exercitation commodo id ex in veniam.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 10,
+    "name": "Moss Burch",
+    "createdAt": "2020-06-28T05:35:13 -02:00",
+    "stock": 921,
+    "details": [
+      {
+        "price": 5431.75,
+        "description": "Pariatur adipisicing amet sunt nostrud commodo consequat.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 11,
+    "name": "Megan Kelley",
+    "createdAt": "2015-04-15T06:44:03 -02:00",
+    "stock": 440,
+    "details": [
+      {
+        "price": 47087.71,
+        "description": "Enim occaecat eu laborum dolor laborum nulla anim sint.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 12,
+    "name": "Rodgers Stokes",
+    "createdAt": "2016-03-22T12:25:46 -01:00",
+    "stock": 2483,
+    "details": [
+      {
+        "price": 5580.57,
+        "description": "Magna ullamco officia consequat ea nostrud laborum quis anim mollit dolor quis voluptate.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 13,
+    "name": "Watson Barron",
+    "createdAt": "2019-03-30T01:32:24 -01:00",
+    "stock": 2428,
+    "details": [
+      {
+        "price": 55807.17,
+        "description": "Sit ad cillum non sint consectetur ullamco sint.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 14,
+    "name": "Tanisha Clemons",
+    "createdAt": "2019-03-20T05:07:46 -01:00",
+    "stock": 2725,
+    "details": [
+      {
+        "price": 80258.96,
+        "description": "Labore dolor non id nulla adipisicing in consequat amet consequat non sit.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 15,
+    "name": "Lynda Joseph",
+    "createdAt": "2019-08-12T07:29:22 -02:00",
+    "stock": 938,
+    "details": [
+      {
+        "price": 70317.39,
+        "description": "Id ea culpa proident ex occaecat non voluptate id ad.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 16,
+    "name": "Noemi Calhoun",
+    "createdAt": "2021-05-19T11:59:19 -02:00",
+    "stock": 1406,
+    "details": [
+      {
+        "price": 44221.62,
+        "description": "Proident sunt duis nostrud fugiat quis sint enim exercitation consectetur ea nostrud commodo sit.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 17,
+    "name": "Dolly Mccormick",
+    "createdAt": "2016-06-11T02:50:39 -02:00",
+    "stock": 2747,
+    "details": [
+      {
+        "price": 30116.28,
+        "description": "Nostrud nostrud excepteur laboris incididunt.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 18,
+    "name": "Emma Gould",
+    "createdAt": "2021-10-24T01:23:28 -02:00",
+    "stock": 804,
+    "details": [
+      {
+        "price": 15814,
+        "description": "Quis aliqua fugiat minim labore ex proident aliqua labore voluptate consequat anim ullamco.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 19,
+    "name": "Soto Soto",
+    "createdAt": "2017-08-01T02:19:47 -02:00",
+    "stock": 2081,
+    "details": [
+      {
+        "price": 20180.02,
+        "description": "Aliqua aute duis excepteur et officia laborum labore veniam commodo excepteur.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 20,
+    "name": "Hill Duran",
+    "createdAt": "2018-06-04T08:50:34 -02:00",
+    "stock": 971,
+    "details": [
+      {
+        "price": 72067.9,
+        "description": "Do ad ea duis ipsum ipsum veniam cillum elit incididunt.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 21,
+    "name": "Sybil Townsend",
+    "createdAt": "2023-08-11T02:06:18 -02:00",
+    "stock": 4252,
+    "details": [
+      {
+        "price": 6514.15,
+        "description": "Veniam voluptate veniam deserunt pariatur ipsum do consequat tempor culpa et eu mollit occaecat.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 22,
+    "name": "Jocelyn Mccoy",
+    "createdAt": "2022-03-29T03:49:30 -02:00",
+    "stock": 1060,
+    "details": [
+      {
+        "price": 1585.05,
+        "description": "Voluptate ipsum excepteur sint aliquip do mollit tempor officia aliquip labore commodo laboris veniam.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 23,
+    "name": "Elsa Gallagher",
+    "createdAt": "2019-03-17T05:39:19 -01:00",
+    "stock": 2204,
+    "details": [
+      {
+        "price": 83304.83,
+        "description": "Et labore in in do.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 24,
+    "name": "Twila Holt",
+    "createdAt": "2021-10-15T03:19:39 -02:00",
+    "stock": 3955,
+    "details": [
+      {
+        "price": 57677.93,
+        "description": "Tempor anim adipisicing fugiat Lorem nostrud do duis enim.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 25,
+    "name": "Gilliam Hardin",
+    "createdAt": "2022-03-26T09:56:13 -01:00",
+    "stock": 2815,
+    "details": [
+      {
+        "price": 15301.85,
+        "description": "In non duis sit minim veniam et ut.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 26,
+    "name": "Naomi Eaton",
+    "createdAt": "2022-09-22T07:21:01 -02:00",
+    "stock": 938,
+    "details": [
+      {
+        "price": 29821.29,
+        "description": "Dolore tempor nulla elit ea est do magna labore aliquip dolor nostrud.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 27,
+    "name": "Holman Bird",
+    "createdAt": "2017-05-14T08:26:02 -02:00",
+    "stock": 4571,
+    "details": [
+      {
+        "price": 84004.34,
+        "description": "Nisi dolor pariatur commodo aliqua cillum pariatur.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 28,
+    "name": "Huff Ewing",
+    "createdAt": "2018-01-01T05:36:04 -01:00",
+    "stock": 1656,
+    "details": [
+      {
+        "price": 63898.66,
+        "description": "Tempor mollit pariatur deserunt veniam commodo aliquip esse veniam non ad.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 29,
+    "name": "Charlene Cleveland",
+    "createdAt": "2015-06-06T01:51:05 -02:00",
+    "stock": 2914,
+    "details": [
+      {
+        "price": 50408.85,
+        "description": "Duis reprehenderit ea aliquip ex nostrud consequat duis enim.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 30,
+    "name": "Hansen Burke",
+    "createdAt": "2019-09-25T06:28:30 -02:00",
+    "stock": 1990,
+    "details": [
+      {
+        "price": 54570.58,
+        "description": "Labore anim ex excepteur est voluptate velit excepteur eiusmod ex aute.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 31,
+    "name": "Adkins Pearson",
+    "createdAt": "2015-05-01T10:44:00 -02:00",
+    "stock": 267,
+    "details": [
+      {
+        "price": 70223.71,
+        "description": "Irure consectetur esse aute do sint quis excepteur.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 32,
+    "name": "Gina Clements",
+    "createdAt": "2018-08-14T02:21:14 -02:00",
+    "stock": 897,
+    "details": [
+      {
+        "price": 45185.52,
+        "description": "Excepteur et et duis consequat.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 33,
+    "name": "Chase Copeland",
+    "createdAt": "2023-03-23T05:01:46 -01:00",
+    "stock": 2956,
+    "details": [
+      {
+        "price": 24513.24,
+        "description": "Aute nisi eu velit pariatur Lorem proident pariatur.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 34,
+    "name": "Jamie Pace",
+    "createdAt": "2016-06-02T06:43:35 -02:00",
+    "stock": 4554,
+    "details": [
+      {
+        "price": 67106.24,
+        "description": "Culpa aute cillum ex elit dolore velit minim dolor reprehenderit eu amet qui incididunt magna.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 35,
+    "name": "Haley Padilla",
+    "createdAt": "2022-02-10T09:58:35 -01:00",
+    "stock": 3922,
+    "details": [
+      {
+        "price": 31169.24,
+        "description": "Aliquip minim cillum irure exercitation.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 36,
+    "name": "Humphrey Rogers",
+    "createdAt": "2017-03-16T04:13:16 -01:00",
+    "stock": 790,
+    "details": [
+      {
+        "price": 88573.47,
+        "description": "Ex adipisicing nisi ipsum dolor culpa sint sint labore elit cupidatat.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 37,
+    "name": "Marcie Lopez",
+    "createdAt": "2023-06-29T08:04:19 -02:00",
+    "stock": 3699,
+    "details": [
+      {
+        "price": 28935.27,
+        "description": "Commodo laborum sit voluptate cupidatat in minim Lorem duis.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 38,
+    "name": "Martinez Mcgowan",
+    "createdAt": "2017-02-27T06:02:13 -01:00",
+    "stock": 1501,
+    "details": [
+      {
+        "price": 33441.15,
+        "description": "Nostrud consequat velit laboris sint nostrud.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 39,
+    "name": "Constance Prince",
+    "createdAt": "2015-03-07T10:08:15 -01:00",
+    "stock": 3254,
+    "details": [
+      {
+        "price": 76221.23,
+        "description": "Cillum sit amet consequat do.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 40,
+    "name": "Shepherd Acevedo",
+    "createdAt": "2021-02-28T04:10:57 -01:00",
+    "stock": 1485,
+    "details": [
+      {
+        "price": 89462.75,
+        "description": "Qui exercitation magna reprehenderit minim tempor.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 41,
+    "name": "Loretta Logan",
+    "createdAt": "2021-12-03T07:06:28 -01:00",
+    "stock": 1875,
+    "details": [
+      {
+        "price": 7252.29,
+        "description": "Pariatur duis amet esse culpa.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 42,
+    "name": "Lupe Mckee",
+    "createdAt": "2016-04-13T02:36:01 -02:00",
+    "stock": 3714,
+    "details": [
+      {
+        "price": 7886.69,
+        "description": "Esse tempor velit do anim aliqua commodo eiusmod anim velit sunt id nulla.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 43,
+    "name": "Georgette Villarreal",
+    "createdAt": "2015-01-23T01:34:23 -01:00",
+    "stock": 3655,
+    "details": [
+      {
+        "price": 24766.28,
+        "description": "Proident aliqua irure ut amet pariatur id consequat mollit.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 44,
+    "name": "Sondra Morse",
+    "createdAt": "2022-01-15T11:10:09 -01:00",
+    "stock": 4750,
+    "details": [
+      {
+        "price": 72582.4,
+        "description": "Non in in cillum pariatur ea fugiat mollit proident veniam do labore aliqua qui est.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 45,
+    "name": "Luz Sparks",
+    "createdAt": "2014-05-31T07:29:24 -02:00",
+    "stock": 1027,
+    "details": [
+      {
+        "price": 5200.89,
+        "description": "Exercitation eu velit adipisicing est irure aute velit occaecat occaecat ipsum velit consectetur ullamco exercitation.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 46,
+    "name": "Johnnie Solomon",
+    "createdAt": "2016-10-20T02:23:22 -02:00",
+    "stock": 1366,
+    "details": [
+      {
+        "price": 9332.02,
+        "description": "Dolore quis eu non aute mollit proident do deserunt et dolor reprehenderit velit.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 47,
+    "name": "Barrett Fitzpatrick",
+    "createdAt": "2014-08-30T07:11:34 -02:00",
+    "stock": 2155,
+    "details": [
+      {
+        "price": 63896.92,
+        "description": "Labore aute sit voluptate irure minim.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 48,
+    "name": "Davidson Carroll",
+    "createdAt": "2023-08-01T11:06:54 -02:00",
+    "stock": 2514,
+    "details": [
+      {
+        "price": 15984.49,
+        "description": "Ullamco commodo labore velit nisi pariatur mollit.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 49,
+    "name": "Mills Kinney",
+    "createdAt": "2021-11-27T03:18:33 -01:00",
+    "stock": 4929,
+    "details": [
+      {
+        "price": 44728.63,
+        "description": "Sit mollit ullamco mollit est aliqua aliquip velit commodo.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 50,
+    "name": "William Leblanc",
+    "createdAt": "2020-02-22T07:01:34 -01:00",
+    "stock": 1124,
+    "details": [
+      {
+        "price": 74796.67,
+        "description": "Aute qui ex in laborum ullamco irure.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 51,
+    "name": "Pierce Beck",
+    "createdAt": "2020-10-14T10:44:50 -02:00",
+    "stock": 2271,
+    "details": [
+      {
+        "price": 39816.43,
+        "description": "Aute sint adipisicing esse excepteur enim et labore Lorem.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 52,
+    "name": "Castaneda Patrick",
+    "createdAt": "2014-05-25T08:01:55 -02:00",
+    "stock": 1804,
+    "details": [
+      {
+        "price": 88582.5,
+        "description": "Sint elit mollit deserunt deserunt est anim est labore magna eu ipsum ex commodo Lorem.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 53,
+    "name": "Beatrice Atkins",
+    "createdAt": "2018-04-09T08:28:24 -02:00",
+    "stock": 2374,
+    "details": [
+      {
+        "price": 2814.8,
+        "description": "Sit enim ea et eiusmod non.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 54,
+    "name": "Jo Craig",
+    "createdAt": "2019-09-01T07:04:32 -02:00",
+    "stock": 91,
+    "details": [
+      {
+        "price": 79951.05,
+        "description": "Qui nisi pariatur cillum ut do quis.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 55,
+    "name": "Erin Burns",
+    "createdAt": "2018-06-04T07:31:53 -02:00",
+    "stock": 604,
+    "details": [
+      {
+        "price": 12775.82,
+        "description": "Deserunt consectetur minim quis aute duis adipisicing et laborum mollit duis.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 56,
+    "name": "Gonzalez Rosario",
+    "createdAt": "2022-01-15T10:22:55 -01:00",
+    "stock": 1208,
+    "details": [
+      {
+        "price": 68938.77,
+        "description": "Minim veniam adipisicing aliqua minim ad pariatur.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 57,
+    "name": "Beulah Gonzales",
+    "createdAt": "2022-12-21T11:28:59 -01:00",
+    "stock": 3374,
+    "details": [
+      {
+        "price": 41884.65,
+        "description": "Laborum tempor proident magna commodo excepteur eiusmod veniam veniam Lorem.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 58,
+    "name": "Kendra Stein",
+    "createdAt": "2014-05-28T02:14:20 -02:00",
+    "stock": 885,
+    "details": [
+      {
+        "price": 80094.97,
+        "description": "Laborum aliqua deserunt excepteur voluptate eiusmod anim deserunt irure in enim cillum.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 59,
+    "name": "Enid Watson",
+    "createdAt": "2020-11-04T04:12:04 -01:00",
+    "stock": 971,
+    "details": [
+      {
+        "price": 64290.14,
+        "description": "Fugiat cupidatat laboris pariatur aliquip exercitation occaecat magna commodo nisi.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 60,
+    "name": "Barlow Bass",
+    "createdAt": "2020-04-09T08:47:25 -02:00",
+    "stock": 1065,
+    "details": [
+      {
+        "price": 25167.51,
+        "description": "Ea esse anim sunt officia et.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 61,
+    "name": "George Donaldson",
+    "createdAt": "2022-11-17T12:14:53 -01:00",
+    "stock": 1725,
+    "details": [
+      {
+        "price": 42545.05,
+        "description": "Enim magna ullamco eu excepteur eu laborum Lorem sit consequat cupidatat laboris laboris commodo.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 62,
+    "name": "Aimee Mcclure",
+    "createdAt": "2020-03-21T06:46:49 -01:00",
+    "stock": 1842,
+    "details": [
+      {
+        "price": 31525.72,
+        "description": "Sit magna et culpa aute est tempor ut velit ipsum.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 63,
+    "name": "David Oneill",
+    "createdAt": "2018-06-03T07:12:36 -02:00",
+    "stock": 4358,
+    "details": [
+      {
+        "price": 71873.31,
+        "description": "Consectetur non esse Lorem aliquip deserunt sunt exercitation dolor do occaecat amet velit officia.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 64,
+    "name": "Eloise Sheppard",
+    "createdAt": "2014-02-10T11:32:56 -01:00",
+    "stock": 1145,
+    "details": [
+      {
+        "price": 42299.99,
+        "description": "Et consequat anim ullamco velit do est enim fugiat nostrud irure ea reprehenderit nisi reprehenderit.",
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "_id": 65,
+    "name": "Ferrell Parsons",
+    "createdAt": "2021-04-25T06:58:38 -02:00",
+    "stock": 1362,
+    "details": [
+      {
+        "price": 83919.08,
+        "description": "Excepteur in excepteur sint mollit amet sit anim occaecat dolor ex.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 66,
+    "name": "Monica Brady",
+    "createdAt": "2020-02-14T07:17:42 -01:00",
+    "stock": 1110,
+    "details": [
+      {
+        "price": 74997.71,
+        "description": "In excepteur et magna Lorem consequat officia incididunt laborum labore.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 67,
+    "name": "Glenda English",
+    "createdAt": "2022-09-28T12:16:48 -02:00",
+    "stock": 3444,
+    "details": [
+      {
+        "price": 75620.74,
+        "description": "Nisi ullamco aute ad occaecat ad nostrud fugiat velit aute eu minim consectetur.",
+        "color": "magenta"
+      }
+    ]
+  },
+  {
+    "_id": 68,
+    "name": "Estela Mcpherson",
+    "createdAt": "2014-07-29T02:58:18 -02:00",
+    "stock": 3603,
+    "details": [
+      {
+        "price": 39102.17,
+        "description": "Pariatur laboris consequat quis adipisicing anim ipsum dolor.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 69,
+    "name": "Allen Rojas",
+    "createdAt": "2021-07-10T10:09:20 -02:00",
+    "stock": 74,
+    "details": [
+      {
+        "price": 55948.48,
+        "description": "Commodo sunt eu ullamco ad nisi incididunt officia.",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "_id": 70,
+    "name": "Jarvis Howell",
+    "createdAt": "2015-04-23T06:10:04 -02:00",
+    "stock": 4131,
+    "details": [
+      {
+        "price": 56762.98,
+        "description": "Magna consequat adipisicing consectetur minim in ea voluptate laboris officia sint.",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "_id": 71,
+    "name": "Burch Blanchard",
+    "createdAt": "2018-02-08T12:55:09 -01:00",
+    "stock": 1580,
+    "details": [
+      {
+        "price": 8011.81,
+        "description": "Velit id ullamco nostrud officia excepteur fugiat ad minim ipsum incididunt ex occaecat.",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "_id": 72,
+    "name": "Taylor Brewer",
+    "createdAt": "2023-04-03T03:21:37 -02:00",
+    "stock": 4981,
+    "details": [
+      {
+        "price": 58290.71,
+        "description": "Consectetur labore sit excepteur ipsum laborum aliqua consectetur aliqua nisi velit ex aliqua.",
+        "color": "black"
+      }
+    ]
+  }
+]
