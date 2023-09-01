@@ -9,19 +9,16 @@ const app = express();
 const port = 3000;
 const nodemailer = require('nodemailer')
 const ejs = require('ejs');
-
-// Middleware
-
 const authorizedKeys = ['your_api_key_1', 'your_api_key_2'];
 
 app.use(cors());
 app.use(bodyParser.json());
 let users = require('./users.json');
+
 const usersFilePath = path.join(__dirname, 'users.json');
 const verificationFilePath = path.join(__dirname, 'verification.ejs');
 
 const isActive = false;
-// Secret key for JWT
 const secretKey = 'ihatemylife';
 
 const template = fs.readFileSync(verificationFilePath, 'utf-8');
