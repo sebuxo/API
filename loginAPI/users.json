@@ -1,10 +1,17 @@
 [
   {
-    "username": "testusername",
-    "password": "$2b$10$Cw5S4aCCzC7DDSQvtU752eaVZ2O3ampdCWb79jUJ2bVH7U4RuQh1e"
+    "email": "hell.daoum+5@gmail.com",
+    "password": "$2b$10$EfvG/9zdb.xiRtU8L3z5guRuNSw8/Y910Y3.UWPX30IB3QFy5CjOS",
+    "firstname": "Tsubaki",
+    "lastname": "Izayoi",
+    "isActive": false,
+    "activationCode": 40911703
   },
   {
-    "username": "testuszername",
-    "password": "$2b$10$fg.sNf//NNcdpY0JlZguluAff5UWqiiCAkqpjMx9bDmQktWroBcv."
+    "email": "hell.daoum+7@gmail.com",
+    "password": 69632432,
+    "activationCode": 98017134,
+    "firstname": "mouad",
+    "lastname": "testuser"
   }
 ]

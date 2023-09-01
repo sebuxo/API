@@ -8,15 +8,39 @@ const path = require('path');
 const app = express();
 const port = 3000;
 const nodemailer = require('nodemailer')
+const ejs = require('ejs');
 
 // Middleware
+
+const authorizedKeys = ['your_api_key_1', 'your_api_key_2'];
+
 app.use(cors());
 app.use(bodyParser.json());
-let users =[];
+let users = require('./users.json');
 const usersFilePath = path.join(__dirname, 'users.json');
+const verificationFilePath = path.join(__dirname, 'verification.ejs');
 
+const isActive = false;
 // Secret key for JWT
 const secretKey = 'ihatemylife';
+
+const template = fs.readFileSync(verificationFilePath, 'utf-8');
+const compiledTemplate = ejs.compile(template);
+
+
+const randomgen = ()=>{
+  const min = 10000000; 
+  const max = 99999999; 
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+const SendConfirmation = (email,code,lastname) =>{
+
+  const html = compiledTemplate({
+    name: lastname, 
+    confirmationCode: code,
+  });
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -26,12 +50,11 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-
 const mailOptions = {
-    from: 'li7wak',
-    to: 'xenojiva1@gmail.com',
-    subject: 'Verification key PayeTaKawa',
-    text: 'This is a test email sent from Node.js using nodemailer.'
+    from: 'mouad.charif.069@gmail.com',
+    to: email,
+    subject: 'Password key PayeTaKawa',
+    html: html
 };
 
 transporter.sendMail(mailOptions, (error, info) => {
@@ -41,37 +64,41 @@ transporter.sendMail(mailOptions, (error, info) => {
         console.log('Email sent:', info.response);
     }
 });
+}
 
-
-// Register endpoint
 app.post('/register', async (req, res) => {
-    try {
-      const {email ,password, firstname , lastname} = req.body;
+  const randomverif = randomgen();
+  const randomPassword = randomgen();
   
-      // Read existing user data from the JSON file
-      let users = [];
+    try {
+      const {email , firstname , lastname} = req.body;
+      console.log(req.body);
+  
       try {
+      
         const fileContent = fs.readFileSync(usersFilePath, 'utf8');
+     
         users = JSON.parse(fileContent);
+       
       } catch (error) {
         console.error('Error reading users file:', error);
       }
   
-      // Check if the username already exists
-      if (users.some(user => user.username === username)) {
-        return res.status(400).json({ message: 'Username already exists' });
+    
+      if (users.some(user => user.email === email)) {
+        return res.status(400).json({ message: 'email already registered' });
       }
-  
-      const hashedPassword = await bcrypt.hash(password, 10);
-      const newUser = { username, password: hashedPassword };
-  
-      // Add the new user to the array
+      console.log("new user")
+ 
+      const newUser = {email, password: randomPassword,activationCode: randomverif ,firstname ,lastname};
+      console.log(newUser)
       users.push(newUser);
-  
-      // Write the updated user data back to the JSON file
+
       try {
+     
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        res.status(201).json({ message: 'User registered successfully' });
+        SendConfirmation(newUser.email,activationCode,newUser.lastname)
+        res.status(200).json({ message: 'User registered successfully' });
       } catch (error) {
         console.error('Error writing users file:', error);
         res.status(500).json({ message: 'Error registering user' });
@@ -81,10 +108,19 @@ app.post('/register', async (req, res) => {
     }
   });
 
-// Login endpoint
+
+
+  app.get('/verify',(req,res) =>{
+    console.log(req.body.email)
+    console.log(req.body.verification)
+    const user = users.find(user => user.email == req.body.email && user.activationCode==req.body.verification);
+  
+    console.log(user);
+    user ? res.send(user.password) : res.status(401).json({message: 'User not found'});
+})
 app.post('/login', async (req, res) => {
   const user = users.find(u => u.username === req.body.username);
-  console.log("someone logged in");
+  console.log("Someone logged in");
   if (!user) {
     return res.status(401).json({ message: 'User not found' });
   }

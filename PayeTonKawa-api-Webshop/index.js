@@ -1,4 +1,4 @@
-
+const Crypto = require('crypto')
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -13,22 +13,46 @@ app.get('/', (req, res) => {
   res.send('Welcome to the mobile app API!');
 });
 
+const authorizedKeys = [];
+
+function randomApiKey(size = 30) {  
+  return Crypto
+    .randomBytes(size)
+    .toString('base64')
+    .slice(0, size)
+}
+
+app.get('/apiKey',(req,res) =>{
+
+    const apiKey = randomApiKey();
+    authorizedKeys.push(apiKey)
+
+    res.send(apiKey);
+})
+
+const validateApiKey = (req, res, next) => {
+  const apiKey = req.query.apiKey || req.headers['x-api-key'];
+  if (authorizedKeys.includes(apiKey)) {
+      next(); 
+  } else {
+      res.status(401).json({ error: 'Unauthorized' });
+  }
+};
+
+const customers = await fetch()
 const customers = require('./customers.json');
 const orders = require('./orders.json');
 const ordersProduct = require('./orders_product.json');
 const Products = require('./products.json')
 
 // return all customers
-app.get('/customers', (req, res) => {
+app.get('/customers', validateApiKey, (req, res) => {
   res.json(customers);
 });
 
-app.get('/products', (req, res) => {
-  res.json(Products);
-});
 
 // return customer of id : index
-app.get('/customers/:index', (req, res) => {
+app.get('/customers/:index', validateApiKey, (req, res) => {
   const index = req.params.index;
   
   if (index < 0 || index >= customers.length) {
@@ -39,7 +63,7 @@ app.get('/customers/:index', (req, res) => {
   res.json(customer);
 });
 
-app.get('/customers/:index/orders/:index2', (req, res) => {
+app.get('/customers/:index/orders/:index2', validateApiKey, (req, res) => {
   const index = req.params.index;
   const index2 = req.params.index2
   
@@ -54,7 +78,7 @@ app.get('/customers/:index/orders/:index2', (req, res) => {
 
 
 // return all products of customer id index and order id index2.
-app.get('/customers/:index/orders/:index2/products', (req, res) => {
+app.get('/customers/:index/orders/:index2/products', validateApiKey, (req, res) => {
   const index = req.params.index;
   const index2 = req.params.index2
   
