@@ -24,7 +24,7 @@ describe('API Tests', () => {
  
   describe('GET /products/:index', () => {
     it('should return a product by ID', async () => {
-      const productId = 4;
+      const productId = 6;
       const response = await chai.request(apiUrl).get(`products/${productId}`).set('x-api-key',token);
       expect(response.status).to.equal(200);
       expect(response.body).to.be.an('object');
