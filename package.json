@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js --exit"
+    "test": "nyc mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js --exit"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "mocha": "^10.2.0",
     "nodemailer": "^6.9.4",
     "nodemon": "^3.0.1",
+    "nyc": "^15.1.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   }

@@ -25,6 +25,8 @@ jobs:
         run: npm test
 
       - name: Push to main on success
+        env:
+          PAT_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"

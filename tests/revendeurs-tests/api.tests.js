@@ -16,7 +16,6 @@ describe('API Tests', () => {
   describe('GET /products', () => {
     it('should return an array of products', async () => {
       const response = await chai.request(apiUrl).get('products').set('x-api-key',token);
-
       expect(response.status).to.equal(200);
       expect(response.body).to.be.an('array');
     });
