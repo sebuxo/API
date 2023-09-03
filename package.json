@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js"
+    "test": "mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js --exit"
   },
   "author": "",
   "license": "ISC",
