@@ -2,11 +2,24 @@ const Crypto = require('crypto')
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3002;
 const cors = require('cors');
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require('swagger-ui-express');
 const apiRoutes = require('./routes/routes');
+const jwt = require('jsonwebtoken')
+
+const secretKey = 'ihatemylife2';
+
+const apiKeyValidator = (req, res, next) => {
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+
+  const tok = jwt.verify(apiKey,secretKey)
+  next();
+
+};
+
+app.use(apiKeyValidator)
 
 const swaggerOptions = {
   swaggerDefinition: {
@@ -25,7 +38,6 @@ const swaggerOptions = {
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
-console.log(JSON.stringify(swaggerDocs))
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use(cors());
 app.use(bodyParser.json());

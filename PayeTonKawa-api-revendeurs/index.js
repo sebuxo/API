@@ -22,10 +22,10 @@ axios.get('https://615f5fb4f7254d0017068109.mockapi.io/api/v1/products').then((r
 
 const apiKeyValidator = (req, res, next) => {
   const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-  
+
   const tok = jwt.verify(apiKey,secretKey)
-console.log(tok);
   next();
+
 };
 
 const swaggerOptions = {
@@ -47,7 +47,6 @@ app.use(apiKeyValidator)
 
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
-console.log(JSON.stringify(swaggerDocs))
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use('/', apiRoutes);
