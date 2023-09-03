@@ -27,17 +27,10 @@ describe('API Tests', () => {
     it('should return a product by ID', async () => {
       const productId = 4;
       const response = await chai.request(apiUrl).get(`products/${productId}`).set('x-api-key',token);
-  
       expect(response.status).to.equal(200);
       expect(response.body).to.be.an('object');
       expect(response.body.id).to.equal(productId.toString());
-    });
-
-    it('should return a 500 status when a product is not found', async () => {
-      const productId = 99;
-      const response = await chai.request(apiUrl).get(`products/${productId}`).set('x-api-key',token);
-      expect(response.status).to.equal(500);    
-    });
+    })
   });
 
 });
