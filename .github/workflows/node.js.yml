@@ -30,6 +30,7 @@ jobs:
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
+          git checkout develop
           git checkout main
           git merge --no-ff $GITHUB_SHA
-          git push origin main
+          git push --set-upstream origin
