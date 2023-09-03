@@ -43,9 +43,9 @@ const updateToken= (user)=>{
     }, secretKey);
     try {
       if (user) {
-        console.log("first token",user.token)
+     
         user.token = token
-        console.log("second token",user.token)
+
         const updatedData = JSON.stringify(users, null, 2);
   
         fs.writeFile(usersFilePath, updatedData, 'utf8', (err) => {
@@ -53,7 +53,7 @@ const updateToken= (user)=>{
             console.error('Error writing JSON file:', err);
             return;
           }
-          console.log('token updated successfully.');
+       
         });
       } else {
         console.error(`User "${user.name}" not found.`);
@@ -102,7 +102,7 @@ app.post('/register', async (req, res) => {
   
     try {
       const {email , firstname , lastname} = req.body;
-      console.log(req.body);
+  
   
       try {
       
@@ -118,7 +118,7 @@ app.post('/register', async (req, res) => {
       if (users.some(user => user.email === email)) {
         return res.status(400).json({ message: 'email already registered' });
       }
-      console.log("new user")
+   
  
       const token = jwt.sign({
         exp: Math.floor(Date.now() / 1000) + (60*60)*2,
@@ -144,10 +144,9 @@ app.post('/register', async (req, res) => {
 
 
   app.post('/verify',(req,res) =>{
-    console.log("verification is :",req.body.verification)
+   
     const user = users.find(user => user.activationCode==req.body.verification);
-  
-    console.log(user);
+
     user ? res.json(user.password) : res.status(401).json({message: 'User not found'});
 })
 
@@ -176,7 +175,7 @@ app.post('/login', async (req, res) => {
       
       res.send(user.token);
   } catch (error) {
-    console.log("error logging in ");
+    
     res.status(500).json({ message: 'Error logging in' });
   }
 });

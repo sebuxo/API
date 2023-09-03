@@ -1,27 +1,5 @@
 [
   {
-    "email": "hell.daoum+5@gmail.com",
-    "password": "$2b$10$EfvG/9zdb.xiRtU8L3z5guRuNSw8/Y910Y3.UWPX30IB3QFy5CjOS",
-    "firstname": "Tsubaki",
-    "lastname": "Izayoi",
-    "isActive": false,
-    "activationCode": 40911703
-  },
-  {
-    "email": "hell.daoum+6@gmail.com",
-    "password": 81082362,
-    "activationCode": 41070496,
-    "firstname": "zz",
-    "lastname": "gg"
-  },
-  {
-    "email": "hell.daoum+7@gmail.com",
-    "password": 35666339,
-    "activationCode": 27303180,
-    "firstname": "zz",
-    "lastname": "gg"
-  },
-  {
     "email": "hell.daoum+8@gmail.com",
     "password": 30610487,
     "activationCode": 77911424,
@@ -91,14 +69,6 @@
     "activationCode": 85496528,
     "firstname": "moa",
     "lastname": "hoa",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTM3NjI5NDcsImRhdGEiOiJtb3VhZC5jaGFyaWYuMDY5KzEyQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc1NTc0N30.ZKMhXi0m7t2R6YWHJ_2LDIDQVX4hvTqmda8945IXA_U"
-  },
-  {
-    "email": "mouad.charif.069+101@gmail.com",
-    "password": 51129534,
-    "activationCode": 31605344,
-    "firstname": "zjejje",
-    "lastname": "bdbdbd",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTM3NjQzOTYsImRhdGEiOiJtb3VhZC5jaGFyaWYuMDY5KzEwMUBnbWFpbC5jb20iLCJpYXQiOjE2OTM3NTcxOTZ9.YBrtOwo2YW0jzfGo_dePlW-pEpwLTexYY26xxTzaV9c"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTM3NjA0OTksImRhdGEiOiJtb3VhZC5jaGFyaWYuMDY5KzEyQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc1MzI5OX0.H2JXaTnC2vKWgOnP3r6Nn-90GSMKw1RzU91nXTnBDtM"
   }
 ]
