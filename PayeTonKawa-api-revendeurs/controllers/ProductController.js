@@ -21,11 +21,10 @@ exports.getProductsById = async (req, res) => {
           const product = response.data;
           res.json(product);
         } else {
-          // If the response status is not 200 (OK), consider it as a not found situation
           res.status(404).json({ error: 'Product not found' });
         }
       } catch (error) {
-        // Handle any errors that occur during the request (e.g., network issues)
+        
         console.error(error);
         res.status(500).json({ error: 'Internal Server Error' });
       }

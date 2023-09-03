@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js --exit"
+    "test": "nyc mocha tests/revendeurs-tests/api.tests.js  tests/webshop-tests/api.tests.js --exit",
+    "start": "node PayeTonKawa-api-revendeurs/index.js & node PayeTonKawa-api-webshop/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "body-parser": "^1.20.2",
     "chai": "^4.3.8",
     "chai-http": "^4.4.0",
+    "concurrently": "^8.2.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "ejs": "^3.1.9",
