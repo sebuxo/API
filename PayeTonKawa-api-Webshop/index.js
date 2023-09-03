@@ -23,6 +23,7 @@ const swaggerOptions = {
   //
   apis: ['./routes/routes.js']
 };
+
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 console.log(JSON.stringify(swaggerDocs))
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
@@ -50,14 +51,7 @@ app.get('/apiKey',(req,res) =>{
 
     res.send(apiKey);
 })
-const validateApiKey = (req, res, next) => {
-  const apiKey = req.query.apiKey || req.headers['x-api-key'];
-  if (authorizedKeys.includes(apiKey)) {
-      next(); 
-  } else {
-      res.status(401).json({ error: 'Unauthorized' });
-  }
-};
+
 
 app.use('/', apiRoutes) 
 

@@ -31,8 +31,41 @@ const randomgen = ()=>{
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+const updateToken= (user)=>{
+  fs.readFile(usersFilePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading JSON file:', err);
+      return;
+    }
+    const token = jwt.sign({
+      exp: Math.floor(Date.now() / 1000) + (60*60)*2,
+      data: user.email
+    }, secretKey);
+    try {
+      if (user) {
+        console.log("first token",user.token)
+        user.token = token
+        console.log("second token",user.token)
+        const updatedData = JSON.stringify(users, null, 2);
+  
+        fs.writeFile(usersFilePath, updatedData, 'utf8', (err) => {
+          if (err) {
+            console.error('Error writing JSON file:', err);
+            return;
+          }
+          console.log('token updated successfully.');
+        });
+      } else {
+        console.error(`User "${user.name}" not found.`);
+      }
+    } catch (error) {
+      console.error('Error parsing JSON data:', error);
+    }
+  });
+}
 
-const SendConfirmation = (email,code,lastname) =>{
+
+const sendConfirmation = (email,code,lastname) =>{
 
   const html = compiledTemplate({
     name: lastname, 
@@ -50,7 +83,7 @@ const transporter = nodemailer.createTransport({
 const mailOptions = {
     from: 'mouad.charif.069@gmail.com',
     to: email,
-    subject: 'Password key PayeTaKawa',
+    subject: 'Verification key PayeTaKawa',
     html: html
 };
 
@@ -87,14 +120,17 @@ app.post('/register', async (req, res) => {
       }
       console.log("new user")
  
-      const newUser = {email, password: randomPassword,activationCode: randomverif ,firstname ,lastname};
-      console.log(newUser)
-      users.push(newUser);
+      const token = jwt.sign({
+        exp: Math.floor(Date.now() / 1000) + (60*60)*2,
+        data: req.body.email
+      }, secretKey);
+      
+      const newUser = {email, password: randomPassword,activationCode: randomverif ,firstname ,lastname,token};
 
+      users.push(newUser);
       try {
-     
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        SendConfirmation(newUser.email,activationCode,newUser.lastname)
+        sendConfirmation(newUser.email,randomverif,newUser.lastname);
         res.status(200).json({ message: 'User registered successfully' });
       } catch (error) {
         console.error('Error writing users file:', error);
@@ -107,29 +143,40 @@ app.post('/register', async (req, res) => {
 
 
 
-  app.get('/verify',(req,res) =>{
-    console.log(req.body.email)
-    console.log(req.body.verification)
-    const user = users.find(user => user.email == req.body.email && user.activationCode==req.body.verification);
+  app.post('/verify',(req,res) =>{
+    console.log("verification is :",req.body.verification)
+    const user = users.find(user => user.activationCode==req.body.verification);
   
     console.log(user);
-    user ? res.send(user.password) : res.status(401).json({message: 'User not found'});
+    user ? res.json(user.password) : res.status(401).json({message: 'User not found'});
 })
-app.post('/login', async (req, res) => {
-  const user = users.find(u => u.username === req.body.username);
-  console.log("Someone logged in");
+
+app.post('/getpassword', async (req, res) => {
+  const user = users.find(u => u.email === req.body.email);
   if (!user) {
     return res.status(401).json({ message: 'User not found' });
   }
-
   try {
-    if (await bcrypt.compare(req.body.password, user.password)) {
-      const token = jwt.sign({ username: user.username }, secretKey, { expiresIn: '1h' });
-      res.json({ token });
-    } else {
-      res.status(401).json({ message: 'Invalid credentials' });
-    }
+
+      SendConfirmation(user.email,user.activationCode,user.lastname)
+      return res.status(200).json({message:'Password sent to mail successfuly'});
   } catch (error) {
+    res.status(500).json({ message: 'Error logging in' });
+  }
+});
+
+app.post('/login', async (req, res) => {
+  const user = users.find(u => u.email === req.body.email && u.password == req.body.password);
+  console.log(user);
+  updateToken(user)
+  if (!user) {
+    return res.status(401).json({ message: 'User not found' });
+  }
+  try {
+      
+      res.send(user.token);
+  } catch (error) {
+    console.log("error logging in ");
     res.status(500).json({ message: 'Error logging in' });
   }
 });
@@ -137,3 +184,5 @@ app.post('/login', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+

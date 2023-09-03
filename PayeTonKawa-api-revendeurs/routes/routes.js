@@ -127,3 +127,5 @@ router.get('/products', productController.getProducts);
 router.get('/products/:index', productController.getProductsById);
 
 
+
+module.exports = router;
