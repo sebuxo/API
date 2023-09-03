@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git checkout -b main
           git merge develop
-          git push --set-upstream origin main
+          git push --force --set-upstream origin main
